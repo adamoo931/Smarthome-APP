@@ -1,0 +1,12 @@
+version: '3.8'
+
+
+services:
+  front-end:
+      build: 
+        dockerfile: Dockerfile
+      container_name: front-end
+      volumes: 
+        - ./react:/usr/src/app
+      ports: 
+        - "80:80"
